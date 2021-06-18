@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "Roboto";
+}
+
+.imgpredlod {
+    z-index: 2;
+}
+
+.menu a img {
+    height: 4rem;
+    padding: 0 2rem;
+}
+
+.wrapper {
+    width: 55%;
+    z-index: 2;
+}
+
+.wrapper img {
+    padding: 1rem;
+}
+
+.h-60 {
+    height: 60vh;
+}
+
+.first {
+    display: flex;
+}
+
+.second,
+.third {
+    display: none;
+}
+
+.wrapper.first {
+    margin: 0 0 6% 6%;
+}
+
+.tovpozic {}
