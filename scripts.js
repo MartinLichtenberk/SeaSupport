@@ -1,39 +1,36 @@
-let firstBtn = document.getElementById("first");
-let secondBtn = document.getElementById("second");
-let thirdBtn = document.getElementById("third");
-let showFirst = document.querySelectorAll(".first");
-let showSecond = document.querySelectorAll(".second");
-let showThird = document.querySelectorAll(".third");
+const firstBtn = document.getElementById("first");
+const secondBtn = document.getElementById("second");
+const thirdBtn = document.getElementById("third");
+const showFirst = document.querySelectorAll(".first");
+const showSecond = document.querySelectorAll(".second");
+const showThird = document.querySelectorAll(".third");
 
-firstBtn.addEventListener("click", () => {
+function turnOff() {
     showFirst.forEach((item) => {
-        item.style.display = "flex";
+        item.style.display = "none";
     })
     showSecond.forEach((item) => {
         item.style.display = "none";
     })
     showThird.forEach((item) => {
         item.style.display = "none";
+    })
+}
+
+firstBtn.addEventListener("click", () => {
+    turnOff();
+    showFirst.forEach((item) => {
+        item.style.display = "flex";
     })
 });
 secondBtn.addEventListener("click", () => {
-    showFirst.forEach((item) => {
-        item.style.display = "none";
-    })
+    turnOff();
     showSecond.forEach((item) => {
         item.style.display = "flex";
     })
-    showThird.forEach((item) => {
-        item.style.display = "none";
-    })
 });
 thirdBtn.addEventListener("click", () => {
-    showFirst.forEach((item) => {
-        item.style.display = "none";
-    })
-    showSecond.forEach((item) => {
-        item.style.display = "none";
-    })
+    turnOff();
     showThird.forEach((item) => {
         item.style.display = "flex";
     })

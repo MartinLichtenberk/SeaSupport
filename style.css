@@ -29,11 +29,11 @@
     height: 60vh;
 }
 
-.first {
+.second {
     display: flex;
 }
 
-.second,
+.first,
 .third {
     display: none;
 }
